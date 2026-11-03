@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="planetExpress">150dp</dimen>
+    <dimen name="cornersButton">10dp</dimen>
+    <dimen name="strokeButton">3dp</dimen>
+    <dimen name="paddingButton">15dp</dimen>
+    <dimen name="widthButton">150dp</dimen>
+    <dimen name="heigthButton">50dp</dimen>
+    <dimen name="widthInicio">500dp</dimen>
+    <dimen name="heigthInicio">100dp</dimen>
+    <dimen name="fontSizeSinCuenta">22dp</dimen>
+
+</resources>

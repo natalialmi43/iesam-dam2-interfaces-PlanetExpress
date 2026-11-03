@@ -5,8 +5,72 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/planetExpress"
+        android:layout_height="@dimen/planetExpress"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rectangle1"
+        android:layout_width="@dimen/widthButton"
+        android:layout_height="@dimen/heigthButton"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/rentangle"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="@dimen/paddingButton"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/rectangle2"
+        android:layout_width="@dimen/widthButton"
+        android:layout_height="@dimen/heigthButton"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="password"
+        android:background="@drawable/rentangle"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="@dimen/paddingButton"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle1"/>
+
+    <ImageView
+        android:id="@+id/inicioSesion"
+        android:layout_width="@dimen/widthInicio"
+        android:layout_height="@dimen/heigthInicio"
+        android:src="@drawable/boton_inicio_sesion"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/sinCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sinCuenta"
+        app:layout_constraintTop_toBottomOf="@+id/inicioSesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/fontSizeSinCuenta"
+        android:textColor="@color/margin"
+        android:layout_marginTop="30dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
